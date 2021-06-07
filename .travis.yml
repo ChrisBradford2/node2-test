@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t snake19922020/node2 .
   - docker images snake19922020/node2
+
+before_deploy:
+  - docker login -u snake19922020 -p abrico2012
+
+deploy:
+  provider: script
+  script: docker push snake19922020/testnode
+  on :
+    branch: master
