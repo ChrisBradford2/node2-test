@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t snake19922020/node2 .
+  - docker images snake19922020/node2
