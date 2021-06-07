@@ -13,4 +13,4 @@ deploy:
   provider: script
   script: docker push snake19922020/testnode
   on :
-    branch: master
+    branch: main
